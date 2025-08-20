@@ -1,38 +1,119 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
-.bar {
-    background-color: #f9f9fb;
-    padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
+a:link, a:visited{
+    color: darkblue;
+    text-decoration: none;
 }
-.content {
-    max-width: 1440px;
-    margin: auto;
-    grid-gap: 3rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+a:hover, a:active{
+    color: darkcyan;
 }
-.footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+header, footer{
+    display: block;
+    background-color: whitesmoke;
+    clear: both;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    padding-top: 16px;
+    width: 100%;
 }
-.anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
-}
-.sidebar {
-    border-right: solid 1px #cdcdcd;
-}
-figure {
+footer{
     text-align: center;
+}
+nav{
+    display: block;
+    float: left;
+    width: 25%;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    padding-top: 16px;
+}
+nav figure{
+    border: 2px solid black;
+    background-color: whitesmoke;
+    padding: 8px 8px;
+    width: auto;
+}
+nav figure img{
+    height: auto;
+    width: 100%;
+}
+
+nav figure figcaption{
+    padding: 8px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main{
+    display: block;
+    float: left;
+    width: 70%;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    padding-top: 16px;
+}
+
+section{
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    padding-top: 16px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+p{
+    padding-bottom: 8px;
+    line-height: 120%;
+}
+hr{
+    border: 1px grey solid;
+    background-color: beige;
+}
+
+ul li{
+        list-style:square
+}
+
+ol li{
+        list-style:decimal-leading-zero
+}
+
+li{
+    padding-bottom: 8px;
+    text-align: justify;
+    line-height: 120%;
+}
+
+blockquote{
+    background-color: darkgrey;
+    border-left: 8px solid gray;
+    padding: 8px 8px;
+}
+
+mark{
+    background-color: darkgrey;
+    text-align: justify;
+    line-height: 120%;
 }
